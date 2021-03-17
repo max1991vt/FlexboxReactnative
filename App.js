@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#ed1b24',
     borderWidth: 5,
     borderColor: 'black',
+    borderTopWidth: 10,
   },
   //bot
   bot: {
