@@ -5,26 +5,35 @@ export default class App extends Component {
   render() {
     return (
       <SafeAreaView style={styles.container}>
-        <View style={styles.top}>
-          <Text>1</Text>
-        </View>
-        {/* bot   */}
-        <View style={styles.bot}>
-          <View style={styles.botColumn2}>
+        <View style={styles.containerTop}>
+          <View style={styles.containerTopRow1}>
+            <Text>1</Text>
+          </View>
+          <View style={styles.containerTopRow2}>
             <Text>2</Text>
           </View>
-          <View style={styles.botColumn3}>
-            <View style={styles.botColumn3Row1}>
+        </View>
+        {/* center  */}
+        <View style={styles.containerCenter}>
+          <View style={styles.containerCenterRow1}>
+            <View style={styles.containerCenterRow1Column1}>
               <Text>3</Text>
             </View>
-            <View style={styles.botColumn3Row2}>
-              <View style={styles.botColumn3Row2Row1}>
-                <Text>4</Text>
-              </View>
-              <View style={styles.botColumn3Row2Row2}>
-                <Text>5</Text>
-              </View>
+            <View style={styles.containerCenterRow1Column2}>
+              <Text>4</Text>
             </View>
+          </View>
+          <View style={styles.containerCenterRow2}>
+            <Text>5</Text>
+          </View>
+        </View>
+        {/* bot   */}
+        <View style={styles.containerBot}>
+          <View style={styles.containerBotRow1}>
+            <Text>6</Text>
+          </View>
+          <View style={styles.containerBotRow2}>
+            <Text>7</Text>
           </View>
         </View>
       </SafeAreaView>
@@ -37,69 +46,90 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     alignItems: 'stretch',
-  },
-  top: {
-    flex: 2.5,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#ed1b24',
-    borderWidth: 5,
     borderColor: 'black',
-    borderTopWidth: 10,
+    borderTopWidth: 5,
   },
-  //bot
-  bot: {
-    flex: 7.5,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    backgroundColor: 'black',
-  },
-  botColumn2: {
+  // top
+  containerTop: {
     flex: 1,
     flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'stretch',
+    backgroundColor: '#ed1b24',
+  },
+  containerTopRow1: {
+    flex: 1,
+    backgroundColor: '#ed1b24',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 5,
+    borderColor: 'black',
+  },
+  containerTopRow2: {
+    flex: 2,
     backgroundColor: '#fef102',
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 5,
     borderColor: 'black',
   },
-  botColumn3: {
-    flex: 2,
-    flexDirection: 'column',
-    backgroundColor: 'green',
+
+  // center
+  containerCenter: {
+    flex: 3,
+    flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'stretch',
+    backgroundColor: 'black',
   },
-  botColumn3Row1: {
+  containerCenterRow1: {
     flex: 2,
-    flexDirection: 'row',
-    backgroundColor: '#00a2ea',
+    justifyContent: 'center',
+    alignItems: 'stretch',
+    borderColor: 'black',
+  },
+  containerCenterRow1Column1: {
+    flex: 1,
+    backgroundColor: '#25b14e',
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 5,
     borderColor: 'black',
   },
-  botColumn3Row2: {
+  containerCenterRow1Column2: {
     flex: 1,
-    flexDirection: 'row',
-    backgroundColor: 'red',
-    justifyContent: 'center',
-    alignItems: 'stretch',
-  },
-  botColumn3Row2Row1: {
-    flex: 1,
-    flexDirection: 'row',
-    backgroundColor: '#feaec9',
-    justifyContent: 'center',
-    alignItems: 'center',
-    borderWidth: 5,
-    borderColor: 'black',
-  },
-  botColumn3Row2Row2: {
-    flex: 1,
-    flexDirection: 'row',
     backgroundColor: '#a349a3',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 5,
+    borderColor: 'black',
+  },
+  containerCenterRow2: {
+    flex: 1,
+    backgroundColor: '#ed1b24',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 5,
+    borderColor: 'black',
+  },
+  //bot
+  containerBot: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'stretch',
+  },
+  containerBotRow1: {
+    flex: 1,
+    backgroundColor: '#ff7f26',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 5,
+    borderColor: 'black',
+  },
+  containerBotRow2: {
+    flex: 1,
+    backgroundColor: '#3f47cc',
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 5,
