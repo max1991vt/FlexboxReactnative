@@ -44,6 +44,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#ed1b24',
+    borderWidth: 5,
+    borderColor: 'black',
   },
   //bot
   bot: {
@@ -58,6 +60,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fef102',
     justifyContent: 'center',
     alignItems: 'center',
+    borderWidth: 5,
+    borderColor: 'black',
   },
   botColumn3: {
     flex: 2,
@@ -72,6 +76,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#00a2ea',
     justifyContent: 'center',
     alignItems: 'center',
+    borderWidth: 5,
+    borderColor: 'black',
   },
   botColumn3Row2: {
     flex: 1,
@@ -86,6 +92,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#feaec9',
     justifyContent: 'center',
     alignItems: 'center',
+    borderWidth: 5,
+    borderColor: 'black',
   },
   botColumn3Row2Row2: {
     flex: 1,
@@ -93,5 +101,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#a349a3',
     justifyContent: 'center',
     alignItems: 'center',
+    borderWidth: 5,
+    borderColor: 'black',
   },
 });
